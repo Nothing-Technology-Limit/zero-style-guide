@@ -1,64 +1,77 @@
-# Zero personality style guide — usage
+# Usage
 
-**Package version:** `2026-09-07`  
-**Canon edition:** **Four** (`FOUR.md`, ~5.2k tokens)  
-**Join card:** `JOIN.md` / `adapters/JOIN-CARD.txt` (~640 tokens)  
-**Persona:** Zero — warm, simple, direct phone-chat builder peer  
+How to run Zero without getting lost.
+
+**Package:** `2026-09-08`  
+**Canon:** Four (`FOUR.md`, ~5.2k tokens)  
+**Join card:** `JOIN.md` (~770 tokens after harden)  
+**Feel:** warm, simple, direct builder peer  
 **North star:** make the user more productive
 
-## What goes where
+## Pick the right file
 
-| File | Role | When to use |
-|------|------|-------------|
-| `FOUR.md` | Full canon | Style Critic grading, design edits, long-form reference |
-| `JOIN.md` | Lean join payload | Paste into an agent when they join a chat |
-| `ZERO-current.md` | Mirror of current canon | Same as Four; convenience symlink/copy |
-| `USAGE.md` | This doc | Humans shipping Zero into agents / evals |
+| Need | Use |
+|------|-----|
+| Agent just joined a chat | Paste all of `JOIN.md` |
+| Grade a dialogue | `FOUR.md` |
+| Change the personality rules | `FOUR.md`, then refresh Join |
+| Model still fails on Join alone | Thin file under `adapters/` |
+| Mirror of current canon | `ZERO-current.md` |
 
-Do **not** paste Four into join chats — it’s too heavy for rapid absorb. Join card only; Critic grades against Four.
+Join is the absorb path. Four is the source of truth. Critic always grades against Four, never Join alone.
 
-## Quick start (agent join)
+## Agent join (30 seconds)
 
 1. Open `JOIN.md`.
-2. Paste the whole card as the first system/user context when the agent joins.
-3. Keep grading / design work on `FOUR.md` (edition Four).
+2. Paste it as the first system or user context when the agent joins.
+3. Keep design and grading on `FOUR.md`.
+
+That’s it. Don’t dump Four into the join.
 
 ## Versioning
 
-Edition names: `Zero` → `One` → `Two` → `Three` → **`Four`** (current).
+Edition names: `Zero` → `One` → `Two` → `Three` → **`Four`**.
 
-- Bump the **edition** only when canon rules change enough that Critic packs need a new baseline.
-- Bump the **package date** (`Package version` above) when Join card, adapters, or this usage doc change without a new edition.
-- Join card and Four can diverge briefly during hardening; Join must still grade all-pass against Four before shipping.
+- New **edition** when canon rules move enough for a new Critic baseline.
+- New **package date** when Join, adapters, or this doc change and Four stays put.
+- Join can lag Four while you harden. Ship Join only when it all-passes against Four.
 
-### Current pins (2026-09-07)
+### Pins right now (`2026-09-08`)
 
 | Artifact | Pin |
 |----------|-----|
 | Canon | Four @ `FOUR.md` |
-| Join card | ~725 tok hardened (Sonnet fail patch: ID/LEN/PX) |
+| Join | Hardened Join card (roleplay-only, invite golds, LEN/PX locks) |
+| Adapters | `adapters/claude-JOIN-sonnet.txt`, `adapters/claude-JOIN-opus.txt` |
 | Eval packs | G1–G8 + ADV A1–A8 + B1–B8 under Four |
 | Join smoke (known pass) | Grok 24/24, Claude Haiku 24/24 |
 
-## Invite policy (Four)
+## Invite rule (Four)
 
-Ask = consent for human/agent adds to events, places, channels, plan rooms. Confirm only lasting ACL / destructive / permanent access.
+Ask means yes for adding a human or agent to an event, place, channel, or plan room. Do it and report.
 
-## Eval notes
+Confirm only when access is lasting or destructive (ACL, permanent write, irreversible deletes).
 
-- Critic grades dialogues against **Four**, never against Join alone.
-- Thin per-model adapters are OK when Join-only fails; don’t fatten Four into the join path.
-- ChatGPT Business: Pro may be `aria-disabled` in the picker; GPT-5.5 / 5.6 / Latest are the working lanes.
+## Eval habits
+
+- Grade against Four.
+- Prefer a thin adapter over fattening Four into the join path.
+- ChatGPT Business: Pro is often greyed out. Use GPT-5.5, 5.6, or Latest.
 
 ## Layout
 
 ```
 zero-style-guide/
-  FOUR.md          # canon
-  JOIN.md          # join card
-  USAGE.md         # this file
-  ZERO-current.md  # mirror of canon
-  THREE.md …       # prior editions (archive)
+  README.md
+  USAGE.md
+  FOUR.md
+  JOIN.md
+  ZERO-current.md
+  THREE.md …          # archive
+  adapters/
+    JOIN-CARD.txt
+    claude-JOIN-sonnet.txt
+    claude-JOIN-opus.txt
 ```
 
-Eval dialogues and runners live separately under `zero-v1-eval/` (optional to publish).
+Eval dialogues and runners live in `zero-v1-eval/` (not in this repo unless you add them later).

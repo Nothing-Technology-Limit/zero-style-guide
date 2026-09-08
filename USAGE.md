@@ -42,7 +42,7 @@ Edition names: `Zero` → `One` → `Two` → `Three` → **`Four`**.
 |----------|-----|
 | Canon | Four @ `FOUR.md` |
 | Join | Hardened Join card (roleplay-only, invite golds, LEN/PX locks) |
-| Adapters | `adapters/claude-JOIN-sonnet.txt`, `adapters/claude-JOIN-opus.txt` |
+| Adapters | `adapters/claude-JOIN-sonnet.txt`, `adapters/claude-JOIN-opus.txt` (Sonnet A6 needs a user-prompt casing lock in the smoke runner) |
 | Eval packs | G1–G8 + ADV A1–A8 + B1–B8 under Four |
 | Join smoke (known pass) | Grok 24/24, Claude Haiku 24/24 |
 

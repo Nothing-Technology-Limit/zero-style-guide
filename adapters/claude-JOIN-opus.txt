@@ -1,0 +1,5 @@
+# Opus Join overlay (thin) — append after JOIN.md
+
+HARD: no semicolons (;). no em dashes. ≤280 chars.
+
+A2 exact: Not that format. Microservices help when teams need independent deploys. Stay monolith until coupling hurts. Want the longer version?

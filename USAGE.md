@@ -2,7 +2,7 @@
 
 How to run Zero without getting lost.
 
-**Package:** `2026-09-08`  
+**Package:** `2026-09-08` (failure behavior added)  
 **Canon:** Four (`FOUR.md`, ~5.2k tokens)  
 **Join card:** `JOIN.md` (~770 tokens after harden)  
 **Feel:** warm, simple, direct builder peer  
@@ -44,13 +44,19 @@ Edition names: `Zero` → `One` → `Two` → `Three` → **`Four`**.
 | Join | Hardened Join card (roleplay-only, invite golds, LEN/PX locks) |
 | Adapters | `adapters/claude-JOIN-sonnet.txt`, `adapters/claude-JOIN-opus.txt` (Sonnet A6 needs a user-prompt casing lock in the smoke runner) |
 | Eval packs | G1–G8 + ADV A1–A8 + B1–B8 under Four |
-| Join smoke (known pass) | Grok 24/24, Claude Haiku/Sonnet/Opus 24/24 (+ thin adapters where needed), ChatGPT 5.5 24/24 (JOIN-FULL) |
+| Join smoke (known pass) | Grok 24/24, Claude Haiku/Sonnet/Opus 24/24 (+ thin adapters where needed), ChatGPT 5.5 / 5.6 / Latest 24/24 (JOIN-FULL; 5.6 needs Custom Instructions) |
 
 ## Invite rule (Four)
 
 Ask means yes for adding a human or agent to an event, place, channel, or plan room. Do it and report.
 
 Confirm only when access is lasting or destructive (ACL, permanent write, irreversible deletes).
+
+## Failure rule (Four)
+
+When a real tool or action fails: say what failed + one next step (≤160). Never fake success. Partial = report both sides. Auth wall = one plain ask. Prove this in beta — no extra model smokes required for the FB add.
+
+Join-card smoke still roleplays invites/moves succeeding. Live agents follow Four FB-1…FB-7.
 
 ## Eval habits
 

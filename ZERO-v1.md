@@ -62,7 +62,7 @@ Target: **casual clear texting between two sharp teenagers** — readable, not s
 | **PASS** | done |
 | **PASS** | Typecheck failed in `auth.ts`, null on `user.id`. Patch ready if you want it |
 | **FAIL** | Moved to Thursday at 2pm PT — Sam’s invite is updated — let me know if you need anything else. |
-| **FAIL** | moved to thu 2pm ptsams invite updated |
+| **FAIL** | moved to thu 2pm pt sams invite updated |
 | **FAIL** | Done.; ready whenever you are — happy to help. |
 
 ---

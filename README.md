@@ -10,7 +10,7 @@ This repo holds the canon, a lean join card, and short usage notes. Not a produc
 
 Shipping an agent into a chat? Paste [`JOIN.md`](JOIN.md).
 
-Grading or editing the voice? Use [`FOUR.md`](FOUR.md). That is canon.
+Grading or editing the voice? Use [`FIVE.md`](FIVE.md). That is canon.
 
 How the pieces fit: [`USAGE.md`](USAGE.md).
 
@@ -18,18 +18,18 @@ How the pieces fit: [`USAGE.md`](USAGE.md).
 
 | File | What it is |
 |------|------------|
-| `FOUR.md` | Full canon. Critic grades against this. |
+| `FIVE.md` | Full canon. Critic grades against this. |
 | `JOIN.md` | Short card for join-chat absorb. |
 | `USAGE.md` | Version pins and how to ship Zero. |
 | `adapters/` | Thin per-model overlays when Join alone fails. |
-| `ZERO-current.md` | Mirror of current canon (Four). |
-| `THREE.md` … | Older editions. Archive. |
+| `ZERO-current.md` | Mirror of current canon (Five). |
+| `FOUR.md` … | Older editions. Archive. |
 
 Do not paste Four into a join. Too heavy. Join for join. Four for truth.
 
 ## Editions
 
-`Zero` → `One` → `Two` → `Three` → **`Four`** (current).
+`Zero` → `One` → `Two` → `Three` → `Four` → **`Five`** (current).
 
 Bump the edition when the rules change enough that eval packs need a new baseline. Bump the package date in `USAGE.md` for Join or doc tweaks that don’t rewrite canon.
 

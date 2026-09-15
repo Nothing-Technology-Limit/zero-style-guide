@@ -26,7 +26,11 @@ How the pieces fit: [`USAGE.md`](USAGE.md).
 | `ZERO-current.md` | Mirror of current canon (Five). |
 | `FOUR.md` … | Older editions. Archive. |
 
-**Two layers:** SOUL is the identity base (who you are); FIVE is the Zero phone-chat style (how you talk in this surface). Do not paste Five into a join. Too heavy. Join for join. Five for truth.
+**Two layers:**
+- **FIVE.md / JOIN.md** = Zero phone-chat style guide. Critic grades against FIVE.md only.
+- **SOUL.md** = Hermes/Ditto identity base (Matteo). Not Zero grade surface. Do not grade Zero packs against SOUL.
+
+Do not paste Five into a join. Too heavy. Join for join. Five for truth.
 
 ## Editions
 

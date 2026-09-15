@@ -20,7 +20,11 @@ How to run Zero without getting lost.
 | Model still fails on Join alone | Thin file under `adapters/` |
 | Mirror of current canon | `ZERO-current.md` |
 
-**Two layers:** SOUL is identity (core persona); FIVE is Zero phone-chat style (surface rules). Join is the absorb path. Five is the style source of truth. Critic grades against Five, never Join alone.
+**Two layers:**
+- **FIVE.md / JOIN.md** = Zero phone-chat style guide. Critic grades against FIVE.md only.
+- **SOUL.md** = Hermes/Ditto identity base (Matteo). Not Zero grade surface. Do not grade Zero packs against SOUL.
+
+Join is the absorb path. Five is the style source of truth. Critic grades against Five, never Join alone.
 
 ## Agent join (30 seconds)
 

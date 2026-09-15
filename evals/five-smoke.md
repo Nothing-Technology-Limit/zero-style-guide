@@ -43,7 +43,7 @@ Grade against `FIVE.md`. Each prompt states expected Pass/Fail and which rule(s)
 
 **Check:** AB-1. 3+ abbreviations = fail.
 
-**Example PASS:** `Set the API URL in your env file. Config loads on startup`
+**Example PASS:** `Set the API URL in your environment file. Config loads on startup`
 
 **Example FAIL:** `Set API URL in env cfg. Cfg loads on app init from svc`
 

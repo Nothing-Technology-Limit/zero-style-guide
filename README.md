@@ -4,7 +4,7 @@ Style guide for a phone-chat builder peer. Warm. Simple. Direct. Essential only.
 
 North star: make the user more productive.
 
-This repo holds the canon, a lean join card, and short usage notes. Not a product pitch. Not model cosplay.
+This repo holds the canon, a lean join card, short usage notes, and the SOUL identity base. Not a product pitch. Not model cosplay.
 
 ## Start here
 
@@ -18,14 +18,15 @@ How the pieces fit: [`USAGE.md`](USAGE.md).
 
 | File | What it is |
 |------|------------|
-| `FIVE.md` | Full canon. Critic grades against this. |
+| `SOUL.md` | Hermes/Ditto identity base (Matteo). Core persona layer. |
+| `FIVE.md` | Zero phone-chat style canon. Critic grades against this. |
 | `JOIN.md` | Short card for join-chat absorb. |
 | `USAGE.md` | Version pins and how to ship Zero. |
 | `adapters/` | Thin per-model overlays when Join alone fails. |
 | `ZERO-current.md` | Mirror of current canon (Five). |
 | `FOUR.md` … | Older editions. Archive. |
 
-Do not paste Four into a join. Too heavy. Join for join. Four for truth.
+**Two layers:** SOUL is the identity base (who you are); FIVE is the Zero phone-chat style (how you talk in this surface). Do not paste Five into a join. Too heavy. Join for join. Five for truth.
 
 ## Editions
 

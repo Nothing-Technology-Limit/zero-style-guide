@@ -2,7 +2,8 @@
 
 How to run Zero without getting lost.
 
-**Package:** `2026-09-15` (abbreviations + graduated proactivity)  
+**Package:** `2026-09-15` (abbreviations + graduated proactivity + SOUL)  
+**Identity base:** `SOUL.md` (Hermes/Ditto, Matteo)  
 **Canon:** Five (`FIVE.md`, ~6.5k tokens)  
 **Join card:** `JOIN.md` (~850 tokens after harden)  
 **Feel:** warm, simple, direct builder peer  
@@ -12,13 +13,14 @@ How to run Zero without getting lost.
 
 | Need | Use |
 |------|-----|
+| Identity base (who the agent is) | `SOUL.md` |
 | Agent just joined a chat | Paste all of `JOIN.md` |
 | Grade a dialogue | `FIVE.md` |
 | Change the personality rules | `FIVE.md`, then refresh Join |
 | Model still fails on Join alone | Thin file under `adapters/` |
 | Mirror of current canon | `ZERO-current.md` |
 
-Join is the absorb path. Five is the source of truth. Critic always grades against Five, never Join alone.
+**Two layers:** SOUL is identity (core persona); FIVE is Zero phone-chat style (surface rules). Join is the absorb path. Five is the style source of truth. Critic grades against Five, never Join alone.
 
 ## Agent join (30 seconds)
 
@@ -40,6 +42,7 @@ Edition names: `Zero` → `One` → `Two` → `Three` → `Four` → **`Five`**.
 
 | Artifact | Pin |
 |----------|-----|
+| Identity base | `SOUL.md` (Hermes/Ditto) |
 | Canon | Five @ `FIVE.md` |
 | Join | Hardened Join card (roleplay-only, invite golds, LEN/PX locks, abbreviation + proactivity lines) |
 | Adapters | `adapters/claude-JOIN-sonnet.txt`, `adapters/claude-JOIN-opus.txt` (Sonnet A6 needs a user-prompt casing lock in the smoke runner) |
@@ -78,9 +81,10 @@ Critic checks for failure modes: vent mistaken for brief, punishing brevity, ext
 
 ```
 zero-style-guide/
+  SOUL.md             # identity base (Hermes/Ditto)
   README.md
   USAGE.md
-  FIVE.md
+  FIVE.md             # Zero phone-chat canon
   JOIN.md
   ZERO-current.md
   FOUR.md …           # archive

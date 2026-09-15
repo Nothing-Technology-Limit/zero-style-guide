@@ -3,9 +3,9 @@
 Short version of how Four + Join got built. Written in Zero voice on purpose.
 
 **Repo:** https://github.com/Nothing-Technology-Limit/zero-style-guide
-**Canon:** `FOUR.md`
+**Canon:** `FIVE.md`
 **Join card:** `JOIN.md`
-**When:** 2026-09-05 to 2026-09-09
+**When:** 2026-09-05 to 2026-09-15
 
 ## What we were building
 
@@ -35,7 +35,7 @@ No big redesign mid-flight. Fix what failed.
 
 ## Edition path
 
-Names are words: Zero, One, Two, Three, then **Four**.
+Names are words: Zero, One, Two, Three, Four, then **Five**.
 
 | Edition | What landed |
 |---------|-------------|
@@ -44,20 +44,21 @@ Names are words: Zero, One, Two, Three, then **Four**.
 | Two | Soft prefs assumed. One blocking ask max |
 | Three | Long how-tos: max 5 steps or short TLDR. Ask host/repo/env before dumping steps |
 | Four | Invite/seat: do and report. Confirm only lasting ACL / destructive. Later: failure behavior (FB-1 to FB-7) for live tools |
+| Five | Abbreviations: ≤1–2 per statement, grounded in prior sentence or common speech. Graduated proactivity (L0–L4): signal-matched initiative when proactivity ON; L3/L4 only then |
 
-Archive old editions in the repo. Keep one canon file: `FOUR.md`.
+Archive old editions in the repo. Keep one canon file: `FIVE.md`.
 
 ## Join card (why it exists)
 
-Four is about 5k tokens. Too heavy to paste when an agent joins a chat.
+Five is about 6.5k tokens. Too heavy to paste when an agent joins a chat.
 
-So we shipped `JOIN.md`: lean absorb card (about 770 tokens). Same persona. Critic still grades against **Four**, never Join alone.
+So we shipped `JOIN.md`: lean absorb card (about 850 tokens). Same persona. Critic still grades against **Five**, never Join alone.
 
 Rule: Join can lag while you harden. Ship Join only when it all-passes vs Four.
 
 ## Eval packs
 
-Three packs, Critic-graded vs Four:
+Three packs, Critic-graded vs Five:
 
 - **G1 to G8** - gold happy path
 - **A1 to A8** - adversarial / escape
@@ -87,7 +88,7 @@ Known Join all-pass (24/24): Grok, Claude Haiku / Sonnet / Opus (thin adapters w
 | File | Why |
 |------|-----|
 | `USAGE.md` | 30-second start |
-| `FOUR.md` | Full canon + grading |
+| `FIVE.md` | Full canon + grading |
 | `JOIN.md` | Paste when an agent joins |
 | `adapters/` | Thin locks for stubborn models |
 
